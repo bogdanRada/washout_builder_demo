@@ -1,7 +1,7 @@
 module Api
   module TestNamespace
   class TestType < WashOut::Type
-    map project: {
+    map test_type: {
       name: :string,
       description: :string,
       users: [{ mail: :string }],
