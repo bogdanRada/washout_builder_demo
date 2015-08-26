@@ -1,4 +1,5 @@
 == WashoutBuilderDemo
 
 This application is a demo for this gem:
- * {WashoutBuilder}[https://github.com/bogdanRada/washout_builder]
+
+ * {WashoutBuilder}[http://github.com/bogdanRada/washout_builder]
