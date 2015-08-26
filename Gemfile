@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+ ruby '2.2.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
@@ -23,7 +23,7 @@ gem 'turbolinks'
 gem 'wash_out', git: 'git://github.com/inossidabile/wash_out.git'
 # Gems used only for assets and not required in production environments by
 # default.
-gem 'washout_builder', :path => '../../../washout_builder'
+gem 'washout_builder'
 
 
 
