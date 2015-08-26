@@ -1,6 +1,5 @@
 class Api::RumbasController < Api::Core
-  soap_service namespace: 'urn:WashOut'
-
+soap_service  namespace: "#{Rails.configuration.api_namespace}rumbas/wsdl"
   # Simple case
   soap_action "integer_to_string",
               :args   => :integer,
