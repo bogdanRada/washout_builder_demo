@@ -26,6 +26,7 @@ gem 'washout_builder'
 
  group :production do
    gem 'pg'
+   gem 'rails_12factor'
  end
 
  gem 'better_errors'
