@@ -1,7 +1,5 @@
 == WashoutBuilderDemo
 
-   This application is a demo for this gem: 
+This application is a demo for this gem:
 
-   = Demo app source code:
-
-   * {WashoutBuilder}[http://github.com/bogdanRada/washout_builder]
+* {WashoutBuilder}[http://github.com/bogdanRada/washout_builder]
