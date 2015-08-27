@@ -1,5 +1,8 @@
 == WashoutBuilderDemo
 
+{<img src="https://gemnasium.com/bogdanRada/washout_builder_demo.svg" alt="Dependency Status" />}[https://gemnasium.com/bogdanRada/washout_builder_demo]
+{<img src="https://stillmaintained.com/bogdanRada/washout_builder_demo.png" />}[https://stillmaintained.com/bogdanRada/washout_builder_demo]
+
 This application is a demo for this gem:
 
 * {WashoutBuilder}[http://github.com/bogdanRada/washout_builder]
