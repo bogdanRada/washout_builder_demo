@@ -82,7 +82,7 @@ GEM
       mini_portile (~> 0.6.0)
     nori (2.6.0)
     pg (0.18.3)
-    puma (2.13.4)
+    puma (2.14.0)
     rack (1.6.4)
     rack-mini-profiler (0.9.7)
       rack (>= 1.1.3)
