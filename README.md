@@ -10,3 +10,7 @@ This application is a demo for this gem:
 ##LIVE DEMO!!!
 
 -	[Demo Application](http://washout-builder.herokuapp.com/)
+
+Click on the **Documentation** links on that page to see the demo application.
+
+Hope you enjoy it :)
