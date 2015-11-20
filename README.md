@@ -5,8 +5,8 @@ WashoutBuilderDemo
 
 This application is a demo for this gem:
 
--	{WashoutBuilder}[http://github.com/bogdanRada/washout_builder\]
+-	[WashOutBuilder](https://github.com/bogdanRada/washout_builder)
 
 ##LIVE DEMO!!!
 
--	{Demo Application}[http://washout-builder.herokuapp.com/\]
+-	[Demo Application](http://washout-builder.herokuapp.com/)
