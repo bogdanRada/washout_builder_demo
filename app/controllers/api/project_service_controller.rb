@@ -11,17 +11,21 @@ class Api::ProjectServiceController < Api::Core
     render :soap => true
   end
 
-  soap_action "delete_member",  :args   => {:mail  => :string, 'redmine_projectid' => :integer, "project_type"=> Api::TestNamespace::TestType },  args_description: { mail: 'some description about this argument' }, :return => :boolean,  :to => :set_inactive_project_assignment
+  soap_action "get_namespace",  :args   => {:mail  => :string, 'projectid' => :integer, "project_type"=> Api::TestNamespace::TestType }, :return => :boolean,  :to => :namespace_method
 
-  def set_inactive_project_assignment
+  def namespace_method
   render :soap => true
   end
 
+  soap_action "fluffy",  :args   => {:members  =>  Api::FluffyContainer  , 'projectid' => Api::Fluffy, 'project_type' => :string} , :return => :boolean,  :to => :fluffy_method
 
+  def fluffy_method
+    render :soap => true
+  end
 
-  soap_action "add_members",  :args   => {:members  =>  [{:mail => :string }] , 'redmine_projectid' => :integer, 'project_type' => :string} , :return => :boolean,  :to => :create_or_set_active_project_assignment
+  soap_action "add_members",  :args   => {:members  =>  [{:mail => :string }] , 'redmine_projectid' => :integer, 'project_type' => :string} , :return => :boolean,  :to => :add_members_method
 
-  def create_or_set_active_project_assignment
+  def add_members_method
     render :soap => true
   end
 
