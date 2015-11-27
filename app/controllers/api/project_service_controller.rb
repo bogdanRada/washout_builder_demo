@@ -17,7 +17,7 @@ class Api::ProjectServiceController < Api::Core
   render :soap => true
   end
 
-  soap_action "fluffy",  :args   => {:members  =>  Api::FluffyContainer  , 'projectid' => Api::Fluffy, 'project_type' => :string} , :return => :boolean,  :to => :fluffy_method
+  soap_action "fluffy",  :args   => {:members  =>  Api::FluffyContainer , :users_array => [User] , 'projectid' => Api::Fluffy, 'project_type' => :string} , :return => :boolean,  :to => :fluffy_method
 
   def fluffy_method
     render :soap => true
