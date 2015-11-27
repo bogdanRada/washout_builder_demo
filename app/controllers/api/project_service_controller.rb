@@ -1,7 +1,7 @@
 class Api::ProjectServiceController < Api::Core
   before_filter  :require_api_authorization
 
-  soap_service  namespace: "#{Rails.configuration.api_namespace}project_service/wsdl"
+  soap_service  namespace: "#{Rails.configuration.api_namespace}project_service/wsdl", description: "Very cool description about this service"
 
   # Simple case
   soap_action "create_or_update",  :args   => Api::ProjectType , :return => :boolean,  :to => :create_or_update
@@ -11,7 +11,7 @@ class Api::ProjectServiceController < Api::Core
     render :soap => true
   end
 
-  soap_action "delete_member",  :args   => {:mail  => :string, 'redmine_projectid' => :integer, "project_type"=> Api::TestNamespace::TestType } , :return => :boolean,  :to => :set_inactive_project_assignment
+  soap_action "delete_member",  :args   => {:mail  => :string, 'redmine_projectid' => :integer, "project_type"=> Api::TestNamespace::TestType },  args_description: { mail: 'some description about this argument' }, :return => :boolean,  :to => :set_inactive_project_assignment
 
   def set_inactive_project_assignment
   render :soap => true
