@@ -21,8 +21,8 @@ gem 'turbolinks'
 gem 'wash_out', git: 'git://github.com/inossidabile/wash_out.git'
 # Gems used only for assets and not required in production environments by
 # default.
-# gem 'washout_builder'
-gem 'washout_builder', path: '/home/raul/workspace/github/washout_builder'
+ gem 'washout_builder'
+#gem 'washout_builder', path: '/home/raul/workspace/github/washout_builder'
 group :production do
   gem 'pg'
   gem 'rails_12factor'
