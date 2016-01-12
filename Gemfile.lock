@@ -204,7 +204,7 @@ GEM
       coercible (~> 1.0)
       descendants_tracker (~> 0.0, >= 0.0.3)
       equalizer (~> 0.0, >= 0.0.9)
-    washout_builder (1.0.9)
+    washout_builder (1.0.10)
       activesupport (~> 4.0, >= 4.0)
       wash_out (~> 0.9.1, >= 0.9.1)
     web-console (3.0.0)
