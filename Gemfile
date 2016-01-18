@@ -41,8 +41,6 @@ gem 'puma'
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
-  gem 'rubocop'
-  gem 'reek'
 
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
