@@ -5,21 +5,9 @@ script: 'ci/travis.rb'
 before_install:
   - "echo 'gem: --no-ri --no-rdoc' > ~/.gemrc"
   - gem install bundler
-  - "rm ${BUNDLE_GEMFILE}.lock"
-  - curl -L https://github.com/kr/beanstalkd/archive/v1.10.tar.gz | tar xz -C /tmp
-  - cd /tmp/beanstalkd-1.10/
-  - make
-  - ./beanstalkd &
-  - cd $TRAVIS_BUILD_DIR
-before_script:
-  - bundle update
-cache: bundler
 env:
   - RAILS_ENV=test RACK_ENV=test
 rvm:
   - 2.2.3
 notifications:
   email: false
-bundler_args: --without test --jobs 3 --retry 3
-addons:
-  postgresql: "9.4"
