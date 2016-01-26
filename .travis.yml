@@ -1,7 +1,8 @@
 sudo: false
 cache: bundler
 language: ruby
-script: 'ci/travis.rb'
+script:
+ - RAILS_ENV=test bundle exec rake --trace db:migrate spec
 before_install:
   - "echo 'gem: --no-ri --no-rdoc' > ~/.gemrc"
   - gem install bundler
