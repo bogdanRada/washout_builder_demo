@@ -4,6 +4,20 @@ ruby '2.2.3'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 4.2.5'
 
+# Use SCSS for stylesheets
+gem 'sass-rails'
+# Use Uglifier as compressor for JavaScript assets
+gem 'uglifier'
+# Use CoffeeScript for .coffee assets and views
+gem 'coffee-rails'
+# See https://github.com/rails/execjs#readme for more supported runtimes
+# gem 'therubyracer', platforms: :ruby
+
+# Use jquery as the JavaScript library
+gem 'jquery-rails'
+# Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
+gem 'turbolinks'
+
 gem 'wash_out', git: 'git://github.com/inossidabile/wash_out.git'
 # Gems used only for assets and not required in production environments by
 # default.
@@ -13,6 +27,9 @@ group :production do
   gem 'pg'
   gem 'rails_12factor'
 end
+
+# Use ActiveModel has_secure_password
+# gem 'bcrypt', '~> 3.1.7'
 
 # Use Unicorn as the app server
 gem 'puma'
