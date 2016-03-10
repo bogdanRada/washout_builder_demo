@@ -33,7 +33,7 @@ end
 
 # Use Unicorn as the app server
 gem 'puma'
-gem 'rake', '~> 10.5'
+gem 'rake', '~> 11.0'
 
 
 group :development do
