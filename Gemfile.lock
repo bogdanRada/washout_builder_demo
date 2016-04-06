@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/inossidabile/wash_out.git
-  revision: 77b051229909b8df6e968517c61e442acd894c00
+  revision: 9d76d2eb6b91b13dd9cc7671d80471c23484beb6
   specs:
     wash_out (0.10.0)
       nori (>= 2.0.0)
@@ -97,7 +97,7 @@ GEM
       mini_portile2 (~> 2.0.0.rc2)
     nori (2.6.0)
     pg (0.18.4)
-    puma (3.2.0)
+    puma (3.3.0)
     rack (1.6.4)
     rack-mini-profiler (0.9.9.2)
       rack (>= 1.2.0)
@@ -150,7 +150,7 @@ GEM
       rspec-mocks (~> 3.4.0)
       rspec-support (~> 3.4.0)
     rspec-support (3.4.1)
-    sass (3.4.21)
+    sass (3.4.22)
     sass-rails (5.0.4)
       railties (>= 4.0.0, < 5.0)
       sass (~> 3.1)
