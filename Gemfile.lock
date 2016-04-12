@@ -165,7 +165,7 @@ GEM
     simplecov-summary (0.0.4)
       colored
       simplecov
-    spring (1.7.0)
+    spring (1.7.1)
     sprockets (3.6.0)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
