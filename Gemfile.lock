@@ -1,8 +1,8 @@
 GIT
   remote: git://github.com/inossidabile/wash_out.git
-  revision: dc4b39d529392e7f72357604f553e34eea2134c3
+  revision: ffa1bf83bed19fa40150e9a8d20bff97b94d889e
   specs:
-    wash_out (0.10.0)
+    wash_out (0.11.0)
       nori (>= 2.0.0)
 
 GEM
@@ -51,7 +51,7 @@ GEM
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     builder (3.2.2)
-    byebug (8.2.5)
+    byebug (9.0.0)
     coderay (1.1.1)
     coffee-rails (4.1.1)
       coffee-script (>= 2.2.0)
@@ -61,7 +61,7 @@ GEM
       execjs
     coffee-script-source (1.10.0)
     colored (1.2)
-    concurrent-ruby (1.0.1)
+    concurrent-ruby (1.0.2)
     coveralls (0.8.13)
       json (~> 1.8)
       simplecov (~> 0.11.0)
@@ -178,7 +178,7 @@ GEM
       tins (~> 1.0)
     thor (0.19.1)
     thread_safe (0.3.5)
-    tilt (2.0.2)
+    tilt (2.0.3)
     tins (1.6.0)
     turbolinks (2.5.3)
       coffee-rails
@@ -223,5 +223,8 @@ DEPENDENCIES
   washout_builder
   web-console
 
+RUBY VERSION
+   ruby 2.3.0p0
+
 BUNDLED WITH
-   1.11.2
+   1.12.3
