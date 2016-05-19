@@ -2,11 +2,13 @@ Rails.application.routes.draw do
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
-   namespace :api do
-   wash_out :rumbas,  module: 'Api'
-   wash_out :project_service,  module: 'Api'
+  namespace :api do
+    wash_out :rumbas,  module: 'Api'
+    wash_out :project_service,  module: 'Api'
   end
-mount WashoutBuilder::Engine => '/'
+  wash_out :product
+
+  mount WashoutBuilder::Engine => '/'
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'

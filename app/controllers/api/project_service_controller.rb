@@ -3,7 +3,7 @@ module Api
   class ProjectServiceController < Api::Core
   #  before_filter :require_api_authorization
 
-    soap_service namespace: "#{Rails.configuration.api_namespace}project_service/wsdl", description: 'Very cool description about this service'
+    soap_service namespace: "#{Rails.configuration.api_namespace}#{controller_name}/wsdl", description: 'Very cool description about this service'
 
     # Simple case
     soap_action 'create_or_update',
