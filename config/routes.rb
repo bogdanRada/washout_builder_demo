@@ -3,8 +3,8 @@ Rails.application.routes.draw do
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
    namespace :api do
-   wash_out :rumbas
-   wash_out :project_service
+   wash_out :rumbas,  module: 'Api'
+   wash_out :project_service,  module: 'Api'
   end
 mount WashoutBuilder::Engine => '/'
 
