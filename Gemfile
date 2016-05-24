@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 ruby '2.3.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 4.2'
+gem 'rails', '5.0.0.rc1'
 
 # Use SCSS for stylesheets
 gem 'sass-rails'
@@ -18,8 +18,9 @@ gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 
-gem 'wash_out', git: 'git://github.com/inossidabile/wash_out.git'
-# Gems used only for assets and not required in production environments by
+#gem 'wash_out', git: 'git://github.com/inossidabile/wash_out.git'
+gem 'wash_out', path: "/home/raul/workspace/github/wash_out"
+# Gems used only for assets and not required in production environments wwby
 # default.
  gem 'washout_builder'
 #gem 'washout_builder', path: '/home/raul/workspace/github/washout_builder'
@@ -61,7 +62,7 @@ end
 
 
 group :test do
-  gem 'rspec-rails', '~> 3.4'
+#  gem 'rspec-rails'
   gem 'simplecov', '~> 0.10'
   gem 'simplecov-summary', '~> 0.0.4'
   gem 'mocha', '~> 1.1'
