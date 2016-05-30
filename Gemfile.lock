@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/inossidabile/wash_out.git
-  revision: ffa1bf83bed19fa40150e9a8d20bff97b94d889e
+  revision: 6c1c749e893f0c6377ba27cf95f6e12ad51a337b
   specs:
     wash_out (0.11.0)
       nori (>= 2.0.0)
@@ -51,7 +51,7 @@ GEM
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     builder (3.2.2)
-    byebug (9.0.4)
+    byebug (9.0.5)
     coderay (1.1.1)
     coffee-rails (4.1.1)
       coffee-script (>= 2.2.0)
