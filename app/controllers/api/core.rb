@@ -1,6 +1,6 @@
 module Api
   class Core < ApplicationController
-    before_filter :dump_parameters
+    before_action :dump_parameters
 
     def require_api_authorization
       return if Rails.env.development?

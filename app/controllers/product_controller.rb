@@ -82,7 +82,7 @@ class ProductController < ApplicationController
 
   # You can use all Rails features like filtering, too. A SOAP controller
   # is just like a normal controller with a special routing.
-  before_filter :dump_parameters
+  before_action :dump_parameters
   def dump_parameters
     Rails.logger.debug params.inspect
   end

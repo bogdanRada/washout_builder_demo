@@ -5,6 +5,12 @@ GIT
     wash_out (0.11.0)
       nori (>= 2.0.0)
 
+PATH
+  remote: engines/client
+  specs:
+    client (0.0.1)
+      rails (>= 4.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -193,6 +199,7 @@ DEPENDENCIES
   better_errors
   binding_of_caller
   byebug
+  client!
   coffee-rails
   coveralls (~> 0.7)
   jquery-rails
