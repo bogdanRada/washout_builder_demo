@@ -6,13 +6,6 @@ GIT
       nori (>= 2.0.0)
 
 PATH
-  remote: /home/raul/workspace/github/washout_builder
-  specs:
-    washout_builder (1.2.3)
-      activesupport (>= 4.0)
-      wash_out (>= 0.9.1)
-
-PATH
   remote: engines/client
   specs:
     client (0.0.1)
@@ -196,6 +189,9 @@ GEM
       thread_safe (~> 0.1)
     uglifier (3.0.0)
       execjs (>= 0.3.0, < 3)
+    washout_builder (1.2.3)
+      activesupport (>= 4.0)
+      wash_out (>= 0.9.1)
     web-console (3.2.1)
       activemodel (>= 4.2)
       debug_inspector
@@ -231,7 +227,7 @@ DEPENDENCIES
   turbolinks
   uglifier
   wash_out!
-  washout_builder!
+  washout_builder
   web-console
 
 RUBY VERSION
