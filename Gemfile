@@ -19,13 +19,14 @@ gem 'jquery-rails'
 gem 'turbolinks'
 
 gem 'client',  path: 'engines/client'
+gem 'namespace-engine2',  path: 'engines/engine2'
 
 gem 'wash_out', git: 'git://github.com/inossidabile/wash_out.git'
 #gem 'wash_out', path: "/home/raul/workspace/github/wash_out"
 # Gems used only for assets and not required in production environments wwby
 # default.
- gem 'washout_builder'
-#gem 'washout_builder', path: '/home/raul/workspace/github/washout_builder'
+# gem 'washout_builder'
+gem 'washout_builder', path: '/home/raul/workspace/github/washout_builder'
 group :production do
   gem 'pg'
   gem 'rails_12factor'

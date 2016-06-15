@@ -7,9 +7,11 @@ Rails.application.routes.draw do
     wash_out :project_service,  module: 'Api'
   end
   wash_out :product
-  mount Client::Engine => '/test'
-  mount WashoutBuilder::Engine => '/'
 
+  mount Namespace::Engine2::Engine => '/mounted'
+  mount Client::Engine => '/test'
+
+  mount WashoutBuilder::Engine => '/'
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
