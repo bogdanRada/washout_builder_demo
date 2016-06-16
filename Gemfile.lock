@@ -6,15 +6,15 @@ GIT
       nori (>= 2.0.0)
 
 PATH
-  remote: engines/client
+  remote: engines/my_engine2
   specs:
-    client (0.0.1)
+    namespace-my_engine2 (0.0.1)
       rails (>= 4.0)
 
 PATH
-  remote: engines/engine2
+  remote: engines/my_engine
   specs:
-    namespace-engine2 (0.0.1)
+    my_engine (0.0.1)
       rails (>= 4.0)
 
 GEM
@@ -207,12 +207,12 @@ DEPENDENCIES
   better_errors
   binding_of_caller
   byebug
-  client!
   coffee-rails
   coveralls (~> 0.7)
   jquery-rails
   mocha (~> 1.1)
-  namespace-engine2!
+  my_engine!
+  namespace-my_engine2!
   pg
   puma
   rack-mini-profiler

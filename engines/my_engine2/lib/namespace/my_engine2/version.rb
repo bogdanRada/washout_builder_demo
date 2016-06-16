@@ -1,6 +1,6 @@
 module Namespace
   # Returns the version of the currently loaded gem as a <tt>Gem::Version</tt>
-  module Engine2
+  module MyEngine2
     #  Returns the version of the currently loaded gem as a <tt>Gem::Version</tt>
     def self.gem_version
       Gem::Version.new VERSION::STRING

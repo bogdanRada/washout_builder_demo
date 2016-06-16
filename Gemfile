@@ -18,8 +18,8 @@ gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 
-gem 'client',  path: 'engines/client'
-gem 'namespace-engine2',  path: 'engines/engine2'
+gem 'my_engine',  path: 'engines/my_engine'
+gem 'namespace-my_engine2',  path: 'engines/my_engine2'
 
 gem 'wash_out', git: 'git://github.com/inossidabile/wash_out.git'
 #gem 'wash_out', path: "/home/raul/workspace/github/wash_out"

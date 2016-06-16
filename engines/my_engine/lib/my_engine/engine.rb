@@ -1,6 +1,6 @@
-module Client
+module MyEngine
   class Engine < ::Rails::Engine
-    isolate_namespace Client
+    isolate_namespace MyEngine
     config.assets.precompile += %w(
       client.js
     )

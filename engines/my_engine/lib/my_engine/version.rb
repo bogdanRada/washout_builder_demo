@@ -1,5 +1,5 @@
 # Returns the version of the currently loaded gem as a <tt>Gem::Version</tt>
-module Client
+module MyEngine
   #  Returns the version of the currently loaded gem as a <tt>Gem::Version</tt>
   def self.gem_version
     Gem::Version.new VERSION::STRING

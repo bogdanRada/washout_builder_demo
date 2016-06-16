@@ -8,8 +8,8 @@ Rails.application.routes.draw do
   end
   wash_out :product
 
-  mount Namespace::Engine2::Engine => '/mounted'
-  mount Client::Engine => '/test'
+  mount MyEngine::Engine => '/engine1'
+  mount Namespace::MyEngine2::Engine => '/engine2'
 
   mount WashoutBuilder::Engine => '/'
   # You can have the root of your site routed with "root"

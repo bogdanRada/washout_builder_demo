@@ -1,10 +1,10 @@
 # Encoding: UTF-8
-require File.expand_path("../lib/client/version", __FILE__)
+require File.expand_path("../lib/namespace/my_engine2/version", __FILE__)
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.name        = 'client'
-  s.version     = Client.gem_version
+  s.name        = 'namespace-my_engine2'
+  s.version     = Namespace::MyEngine2.gem_version
   s.summary     = 'Testing engine for wash out soap service'
   s.description = s.summary
   s.platform    = Gem::Platform::RUBY
