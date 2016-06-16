@@ -1,6 +1,6 @@
 # app/controllers/product_controller.rb
 class ProductController < ApplicationController
-  soap_service namespace: "#{Rails.configuration.default_api_namespace}#{controller_name}/wsdl", description: 'Very cool description about this service'
+  soap_service namespace: "/#{controller_name}/wsdl", description: 'Very cool description about this service'
 
   # Simple case
   soap_action "integer_to_string",

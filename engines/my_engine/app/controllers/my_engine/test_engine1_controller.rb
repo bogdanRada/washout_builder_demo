@@ -1,6 +1,6 @@
 module MyEngine
   class TestEngine1Controller < ApplicationController
-    soap_service namespace: "#{Rails.configuration.default_api_namespace}engine1/#{controller_name}/wsdl", description: 'Very cool description about this service'
+    soap_service namespace: "/engine1/#{controller_name}/wsdl", description: 'Very cool description about this service'
 
     soap_action 'create_or_update',
     args: Api::ProjectType,

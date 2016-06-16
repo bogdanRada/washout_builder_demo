@@ -1,7 +1,7 @@
 module Api
   # rumbas api
   class RumbasController < Api::Core
-    soap_service namespace: "#{Rails.configuration.api_namespace}#{controller_name}/wsdl", description: 'Very cool description about this service'
+    soap_service namespace: "/api/#{controller_name}/wsdl", description: 'Very cool description about this service'
     # Simple case
     soap_action 'integer_to_string',
                 args: :integer,
