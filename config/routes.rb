@@ -9,8 +9,8 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   namespace :api do
-    wash_out :rumbas,  module: 'Api'
-    wash_out :project_service,  module: 'Api'
+    wash_out :rumbas
+    wash_out :project_service
   end
 
   wash_out :product
