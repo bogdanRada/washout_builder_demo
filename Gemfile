@@ -22,6 +22,7 @@ gem 'turbolinks'
 
 gem 'my_engine',  path: 'engines/my_engine'
 gem 'namespace-my_engine2',  path: 'engines/my_engine2'
+gem 'my_engine3',  path: 'engines/my_engine3'
 
 gem 'wash_out', git: 'git://github.com/inossidabile/wash_out.git'
 #gem 'wash_out', path: "/home/raul/workspace/github/wash_out"

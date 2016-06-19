@@ -12,6 +12,12 @@ PATH
       rails (>= 4.0)
 
 PATH
+  remote: engines/my_engine3
+  specs:
+    my_engine3 (0.0.1)
+      rails (>= 4.0)
+
+PATH
   remote: engines/my_engine
   specs:
     my_engine (0.0.1)
@@ -218,6 +224,7 @@ DEPENDENCIES
   jquery-rails
   mocha (~> 1.1)
   my_engine!
+  my_engine3!
   namespace-my_engine2!
   pg
   puma

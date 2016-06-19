@@ -1,5 +1,5 @@
 Namespace::MyEngine2::Engine.routes.draw do
   scope '/soap_api' do
-    wash_out :test_engine2
+    wash_out :test_engine2, module: "namespace/my_engine2"
   end
 end

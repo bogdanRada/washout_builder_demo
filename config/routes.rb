@@ -16,8 +16,8 @@ Rails.application.routes.draw do
   wash_out :product
 
   mount MyEngine::Engine => '/engine1'
-
   mount Namespace::MyEngine2::Engine => '/engine2'
+  mount MyEngine3::Engine => "/engine3"
 
   mount WashoutBuilder::Engine => '/washout'
 
