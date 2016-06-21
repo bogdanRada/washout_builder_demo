@@ -1,8 +1,8 @@
 GIT
   remote: git://github.com/inossidabile/wash_out.git
-  revision: 3e5b114911c82a707dcb4be5651c3159181fa795
+  revision: 0f676b2c84a7427d4c2b24ed5bb92c6dfd360153
   specs:
-    wash_out (0.11.0.beta.1)
+    wash_out (0.11.0.beta.2)
       nori (>= 2.0.0)
 
 PATH
