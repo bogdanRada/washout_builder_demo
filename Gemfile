@@ -29,7 +29,7 @@ gem 'wash_out', git: 'git://github.com/inossidabile/wash_out.git'
 # Gems used only for assets and not required in production environments wwby
 # default.
  gem 'washout_builder'
-#gem 'washout_builder', path: '/home/raul/workspace/github/washout_builder'
+#  gem 'washout_builder', path: '/home/raul/workspace/github/washout_builder'
 group :production do
   gem 'pg'
   gem 'rails_12factor'
@@ -46,6 +46,7 @@ gem 'rake', '~> 11.0'
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
+
   # Use sqlite3 as the database for Active Record
   # codesmell and speed tests
   gem 'rack-mini-profiler'
