@@ -200,7 +200,7 @@ GEM
       thread_safe (~> 0.1)
     uglifier (3.0.0)
       execjs (>= 0.3.0, < 3)
-    washout_builder (1.5.4)
+    washout_builder (1.5.5)
       activesupport (>= 4.0)
       wash_out (>= 0.9.1)
     web-console (3.3.0)
