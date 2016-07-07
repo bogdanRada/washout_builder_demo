@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :products
   # DONT'T DO THIS !!! This is only for the demo to work,
   # instead you should use only the line with "mount WashoutBuilder::Engine"
   # and changing the path
