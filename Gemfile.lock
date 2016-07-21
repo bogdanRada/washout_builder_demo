@@ -122,7 +122,7 @@ GEM
     nori (2.6.0)
     pg (0.18.4)
     pkg-config (1.1.7)
-    puma (3.5.0)
+    puma (3.5.2)
     rack (2.0.1)
     rack-mini-profiler (0.10.1)
       rack (>= 1.2.0)
