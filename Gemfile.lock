@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/inossidabile/wash_out.git
-  revision: 492cbdbb85e136a55f7b4cd065f1409a902b9e01
+  revision: 0208891617955d88a69f9530fd0dfb261b4fb2a7
   specs:
     wash_out (0.11.0.beta.2)
       nori (>= 2.0.0)
@@ -113,7 +113,7 @@ GEM
     mime-types-data (3.2016.0521)
     mini_portile2 (2.1.0)
     minitest (5.9.1)
-    mocha (1.2.0)
+    mocha (1.2.1)
       metaclass (~> 0.0.1)
     nio4r (1.2.1)
     nokogiri (1.6.8.1)
