@@ -41,7 +41,7 @@ end
 # gem 'bcrypt', '~> 3.1.7'
 # Use Unicorn as the app server
 gem 'puma'
-gem 'rake', '~> 11.0'
+gem 'rake', '>= 11.0'
 
 
 group :development do
