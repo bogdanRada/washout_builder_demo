@@ -83,7 +83,11 @@ module Api
     soap_action 'integers_to_request',
                 args: { my_request: { data: [:integer] } },
                 args_description: { my_request: 'description about the MyRequest object here' },
-                as: 'MyRequest',
+                  to: :integers_to_request,
                 return: [:boolean]
+
+    def integers_to_request
+      render soap: params[:value].to_s
+    end
   end
 end
