@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/inossidabile/wash_out.git
-  revision: 2233044daf8d81337c0ae4a80ce8dbcd8b20de55
+  revision: 267c091b60d61ba89d4a3973151a6d246382ec49
   specs:
     wash_out (0.11.0)
       nori (>= 2.0.0)
@@ -81,7 +81,7 @@ GEM
       execjs
     coffee-script-source (1.12.2)
     colorize (0.8.1)
-    concurrent-ruby (1.0.4)
+    concurrent-ruby (1.0.5)
     coveralls (0.8.19)
       json (>= 1.8, < 3)
       simplecov (~> 0.12.0)
@@ -95,7 +95,7 @@ GEM
     execjs (2.7.0)
     globalid (0.3.7)
       activesupport (>= 4.1.0)
-    i18n (0.8.0)
+    i18n (0.8.1)
     jquery-rails (4.2.2)
       rails-dom-testing (>= 1, < 3)
       railties (>= 4.2.0)
@@ -120,7 +120,7 @@ GEM
       mini_portile2 (~> 2.1.0)
     nori (2.6.0)
     pg (0.19.0)
-    puma (3.7.0)
+    puma (3.7.1)
     rack (2.0.1)
     rack-mini-profiler (0.10.2)
       rack (>= 1.2.0)
@@ -187,7 +187,7 @@ GEM
       libv8 (~> 3.16.14.15)
       ref
     thor (0.19.4)
-    thread_safe (0.3.5)
+    thread_safe (0.3.6)
     tilt (2.0.6)
     tins (1.13.2)
     turbolinks (5.0.1)
@@ -195,7 +195,7 @@ GEM
     turbolinks-source (5.0.0)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
-    uglifier (3.0.4)
+    uglifier (3.1.1)
       execjs (>= 0.3.0, < 3)
     washout_builder (1.7.2)
       activesupport (>= 4.0)
