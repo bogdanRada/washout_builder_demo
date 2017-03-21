@@ -2,4 +2,4 @@
 export rvm_project_rvmrc=1
 export rvm_trust_rvmrcs_flag=1
 export rvm_project_rvmrc_default=1
-rvm use 'ruby-2.3.3@washout_builder_demo' --create
+rvm use 'ruby-2.4.0@washout_builder_demo' --create

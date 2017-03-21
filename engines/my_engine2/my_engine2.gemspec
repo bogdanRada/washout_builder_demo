@@ -1,4 +1,5 @@
 # Encoding: UTF-8
+require 'date'
 require File.expand_path("../lib/namespace/my_engine2/version", __FILE__)
 
 # Describe your gem and declare its dependencies:

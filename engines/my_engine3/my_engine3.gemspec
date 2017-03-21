@@ -1,4 +1,5 @@
 # Encoding: UTF-8
+require 'date'
 require File.expand_path("../lib/my_engine3/version", __FILE__)
 
 # Describe your gem and declare its dependencies:
