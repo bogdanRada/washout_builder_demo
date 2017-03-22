@@ -217,11 +217,11 @@ DEPENDENCIES
   binding_of_caller
   byebug
   coffee-rails
-  coveralls (~> 0.7)
+  coveralls
   enhanced_date_select
   execjs
   jquery-rails
-  mocha (~> 1.1)
+  mocha
   my_engine!
   my_engine3!
   namespace-my_engine2!
@@ -232,8 +232,8 @@ DEPENDENCIES
   rails_12factor
   rake (>= 11.0)
   sass-rails
-  simplecov (~> 0.10)
-  simplecov-summary (~> 0.0.4)
+  simplecov
+  simplecov-summary
   spring
   sqlite3
   therubyracer

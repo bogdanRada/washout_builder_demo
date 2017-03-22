@@ -71,8 +71,8 @@ end
 
 group :test do
 #  gem 'rspec-rails'
-  gem 'simplecov', '~> 0.10'
-  gem 'simplecov-summary', '~> 0.0.4'
-  gem 'mocha', '~> 1.1'
-  gem 'coveralls', '~> 0.7'
+  gem 'simplecov'
+  gem 'simplecov-summary'
+  gem 'mocha'
+  gem 'coveralls'
 end
