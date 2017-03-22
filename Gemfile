@@ -71,8 +71,21 @@ end
 
 group :test do
 #  gem 'rspec-rails'
-  gem 'simplecov'
-  gem 'simplecov-summary'
   gem 'mocha'
   gem 'coveralls'
+
+
+  gem 'simplecov', :require => false
+  gem 'simplecov-summary', :require => false
+
+  %w[rspec-core rspec-expectations rspec-mocks rspec-rails rspec-support rspec-instafail].each do |lib|
+    gem lib
+  end
+
+  gem 'shoulda-matchers', '~> 3.1'
+
+  gem 'forgery'
+  gem 'factory_girl_rails'
+  gem 'webmock'
+
 end
