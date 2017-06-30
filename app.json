@@ -58,7 +58,7 @@
       "plan": "heroku-postgresql:hobby-dev",
       "as": "DATABASE",
       "options": {
-        "version": "9.4.9"
+        "version": "9.6.1"
       }
     }
   ],
