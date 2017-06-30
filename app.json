@@ -1,0 +1,83 @@
+{
+  "name": "washout-builder",
+  "description": "Demo application for WashoutBuilder: https://github.com/bogdanRada/washout_builder HTML Generation Documentation for Soap Services. Check it out here: http://washout-builder.herokuapp.com/",
+  "keywords": [
+    "productivity",
+    "HTML5",
+    "wash_out",
+    "washout_builder",
+    "ruby",
+    "Rails",
+    "soap"
+  ],
+  "repository": "https://github.com/bogdanRada/washout_builder_demo",
+  "website": "http://washout-builder.herokuapp.com",
+  "logo": "http://washout-builder.herokuapp.com/favicon.ico",
+  "success_url": "/",
+  "scripts": {
+     "postdeploy": "bundle exec rake db:create && bundle exec rake db:migrate && bundle exec rake db:test:prepare"
+  },
+  "env": {
+    "DATABASE_URL": {
+      "description": "The url to the database used in Heroku, which contains the credentials for db access. This should never be committed into repository",
+      "required": true
+    },
+    "LANG": {
+      "description": "The language used by the application (Default: en_US.UTF-8)",
+      "required": true
+    },
+    "RACK_ENV": {
+      "description": "The old (deprecated) environment variable used by Sinatra to set the environment - kept here for compatibility with other gems",
+      "required": true
+    },
+    "RAILS_ENV": {
+      "description": "The environment variable used by Rails to set the environment (instead of RACK_ENV)",
+      "required": true
+    },
+    "RAILS_SERVE_STATIC_FILES": {
+      "description": "Should be enabled only if static files should be served by Rails (Default: true)",
+      "required": true
+    },
+    "SECRET_KEY_BASE": {
+      "description": "The secret token used by Rails to generate the CSRF tags. This should never be committed into repository",
+      "required": true
+    },
+  },
+  "formation":  {
+    "web": {
+      "quantity": 1,
+      "size": "free"
+    },
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "addons": [
+    {
+      "plan": "heroku-postgresql:hobby-dev",
+      "as": "DATABASE",
+      "options": {
+        "version": "9.4.9"
+      }
+    }
+  ],
+  "region": "eu",
+  "stack": "heroku-16",
+  "buildpacks": [
+    {
+      "url": "heroku/ruby"
+    },
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-locale"
+    }
+  ],
+  "environments": {
+    "test": {
+      "scripts": {
+        "test-setup": "gem install rubocop && gem install reek",
+        "test": "bundle exec rake"
+      }
+    }
+  }
+}
