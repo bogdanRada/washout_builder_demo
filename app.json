@@ -15,7 +15,7 @@
   "logo": "http://washout-builder.herokuapp.com/favicon.ico",
   "success_url": "/",
   "scripts": {
-     "postdeploy": "bundle exec rake db:create && bundle exec rake db:migrate && bundle exec rake db:test:prepare"
+     "postdeploy": "bundle exec rake db:create && bundle exec rake db:migrate && bundle exec rake db:seed && bundle exec rake db:test:prepare"
   },
   "env": {
     "DATABASE_URL": {
