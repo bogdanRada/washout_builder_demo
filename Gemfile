@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.4.1'
+ruby '2.4.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '5.0.2'
@@ -24,7 +24,7 @@ gem 'my_engine',  path: 'engines/my_engine'
 gem 'namespace-my_engine2',  path: 'engines/my_engine2'
 gem 'my_engine3',  path: 'engines/my_engine3'
 
-gem 'wash_out', git: 'git://github.com/inossidabile/wash_out.git'
+gem 'wash_out', git: 'https://github.com/inossidabile/wash_out.git'
 #gem 'wash_out', path: "/home/raul/workspace/github/wash_out"
 # Gems used only for assets and not required in production environments wwby
 # default.
