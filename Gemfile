@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
-ruby '2.6.0'
+ruby '2.6.5'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '5.2.2'
+gem 'rails', '6.0.1'
 
 # Use SCSS for stylesheets
 gem 'sass-rails'
@@ -25,12 +25,12 @@ gem 'namespace-my_engine2',  path: 'engines/my_engine2'
 gem 'my_engine3',  path: 'engines/my_engine3'
 
 gem 'wash_out', git: 'https://github.com/inossidabile/wash_out.git'
-#gem 'wash_out', path: "/home/raul/workspace/github/wash_out"
+#gem 'wash_out', path: "/home/raul/RubymineProjects/wash_out"
 # Gems used only for assets and not required in production environments wwby
 # default.
  gem 'washout_builder'
  gem 'enhanced_date_select'
-#  gem 'washout_builder', path: '/home/raul/workspace/github/washout_builder'
+#  gem 'washout_builder', path: '/home/raul/RubymineProjects/washout_builder'
 group :production do
   gem 'pg'
   gem 'rails_12factor'
