@@ -5,7 +5,7 @@ module Api
 
     soap_service namespace: "/api/#{controller_name}/wsdl", description: 'Very cool description about this service'
 
-    # Simple case
+    #Simple case
     soap_action 'create_or_update',
                 args: Api::ProjectType,
                 args_description: { project: 'desription about element A here' },
@@ -27,7 +27,7 @@ module Api
       render soap: true
     end
 
-    soap_action 'fluffy',  args: { :members  =>  Api::FluffyContainer, :users_array => [User], 'projectid' => Api::Fluffy, 'project_type' => :string },
+    soap_action 'fluffy',  args: { :members  =>  Api::FluffyContainer, :users_array => [User], 'projectid' => Api::ProjectInfoType, 'project_type' => :string },
                            args_description: {
                              members: 'desription about fluffly container',
                              'users_array' => 'description about users array attr',

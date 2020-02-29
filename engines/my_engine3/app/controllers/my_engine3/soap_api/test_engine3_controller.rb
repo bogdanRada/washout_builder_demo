@@ -24,7 +24,7 @@ module MyEngine3
       render soap: true
     end
 
-    soap_action 'fluffy',  args: { :members  =>  Api::FluffyContainer, :users_array => [User], 'projectid' => Api::Fluffy, 'project_type' => :string },
+    soap_action 'fluffy',  args: { :members  =>  Api::FluffyContainer, :users_array => [User], 'projectid' => Api::ProjectInfoType, 'project_type' => :string },
     args_description: {
       members: 'desription about fluffly container',
       'users_array' => 'description about users array attr',

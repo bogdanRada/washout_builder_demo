@@ -1,8 +1,8 @@
 GIT
   remote: https://github.com/bogdanRada/washout_builder.git
-  revision: 2922268f0d4a9271e534353e0037d9f7b561c20d
+  revision: 1e244c5de9aa8902826253f58ebc1ecf9eb53630
   specs:
-    washout_builder (1.7.5)
+    washout_builder (2.0.0)
       activesupport (>= 4.0)
       wash_out (>= 0.9.1)
 
