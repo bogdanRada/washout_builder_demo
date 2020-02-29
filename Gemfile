@@ -28,7 +28,7 @@ gem 'wash_out', git: 'https://github.com/inossidabile/wash_out.git'
 #gem 'wash_out', path: "/home/raul/RubymineProjects/wash_out"
 # Gems used only for assets and not required in production environments wwby
 # default.
- gem 'washout_builder'
+ gem 'washout_builder', git: 'https://github.com/bogdanRada/washout_builder.git'
  gem 'enhanced_date_select'
 #  gem 'washout_builder', path: '/home/raul/RubymineProjects/washout_builder'
 group :production do
