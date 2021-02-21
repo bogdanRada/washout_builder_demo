@@ -3,4 +3,4 @@ export rvm_project_rvmrc=1
 export rvm_trust_rvmrcs_flag=1
 export rvm_project_rvmrc_default=1
 export rvm_silence_path_mismatch_check_flag=1
-rvm use 'ruby-2.7.1@washout_builder_demo' --create
+rvm use 'ruby-3.0.0@washout_builder_demo' --create

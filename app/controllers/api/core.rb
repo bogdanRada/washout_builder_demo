@@ -6,7 +6,7 @@ module Api
       return if Rails.env.development?
       if request.parameters['Envelope'].present? && request.parameters['Envelope']['Header'].present? &&
          request.parameters['Envelope']['Header']['authToken'].present? &&
-         request.parameters['Envelope']['Header']['authToken'] == TestApp::Application.config.api__auth_token
+         request.parameters['Envelope']['Header']['authToken'] == TestApp::Application.config.api_auth_token
         return true
       else
         head :forbidden

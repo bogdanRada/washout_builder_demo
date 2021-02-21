@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
-ruby '2.7.1'
+ruby '3.0.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '6.0.3.2'
+gem 'rails', '6.1.3'
 
 # Use SCSS for stylesheets
 gem 'sass-rails'
@@ -42,8 +42,10 @@ end
 # Use Unicorn as the app server
 gem 'puma'
 gem 'rake', '>= 11.0'
-
-
+gem 'savon'
+#TODO: upgrade wasabi when savon will be compatible with >= 3.6.0
+gem 'wasabi', '3.5.0'
+gem 'httpi'
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
@@ -51,6 +53,7 @@ group :development do
   # Use sqlite3 as the database for Active Record
   # codesmell and speed tests
   gem 'rack-mini-profiler'
+  gem 'memory_profiler'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
   # Access an IRB console on exception pages or by using <%= console %> in views

@@ -20,5 +20,5 @@ Rails.application.routes.draw do
   mount Namespace::MyEngine2::Engine => '/engine2'
   mount MyEngine3::Engine => "/engine3"
 
-
+  match 'test_soap', to: 'application#test_soap', via: [:get]
 end

@@ -1,4 +1,11 @@
 class ProductsController < ApplicationController
+  # this controller is meant only for testing the `enhanced_date_select`
+  # gem and this should not be exposed to production
+  #
+  # I know it's not common to test another gem inside a project for
+  # another gem but needed ActiveRecord for both and i didn't wanted
+  # to make two separate demo applications
+  before_action :verify_authorized, only: [:create, :update, :destroy]
   before_action :set_product, only: [:show, :edit, :update, :destroy]
 
   # GET /products
@@ -55,4 +62,8 @@ class ProductsController < ApplicationController
     def product_params
       params.require(:product).permit(:name, :price)
     end
+
+   def verify_authorized
+    raise ActionController::RoutingError if Rails.env.production?
+  end
 end
