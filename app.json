@@ -63,7 +63,7 @@
     }
   ],
   "region": "eu",
-  "stack": "heroku-18",
+  "stack": "heroku-16",
   "buildpacks": [
     {
       "url": "heroku/ruby"
