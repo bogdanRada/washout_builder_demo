@@ -32,7 +32,7 @@ gem 'wash_out', git: 'https://github.com/inossidabile/wash_out.git'
  gem 'enhanced_date_select'
 #  gem 'washout_builder', path: '/home/raul/RubymineProjects/washout_builder'
 group :production do
-  gem 'pg'
+  gem 'pg', '~> 0.20'
   gem 'rails_12factor'
 end
 

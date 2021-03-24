@@ -145,7 +145,7 @@ GEM
     nokogiri (1.10.10)
       mini_portile2 (~> 2.4.0)
     nori (2.6.0)
-    pg (1.2.3)
+    pg (0.21.0)
     public_suffix (4.0.6)
     puma (5.2.2)
       nio4r (~> 2.0)
@@ -298,7 +298,7 @@ DEPENDENCIES
   my_engine!
   my_engine3!
   namespace-my_engine2!
-  pg
+  pg (~> 0.20)
   puma
   rack-mini-profiler
   rails (= 4.2.11.3)
