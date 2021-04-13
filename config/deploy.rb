@@ -5,8 +5,9 @@ set :application, "washout_builder_demo"
 set :repo_url, "git@github.com:bogdanRada/washout_builder_demo.git"
 
 # Default branch is :master
-fetch :branch, `git rev-parse --abbrev-ref HEAD`.chomp
+ask :branch, fetch(:branch,  `git rev-parse --abbrev-ref HEAD`.chomp)
 
+set :git_shallow_clone, 1
 # Default deploy_to directory is /var/www/my_app_name
 set :deploy_to, "/var/www/washout_builder_demo"
 
