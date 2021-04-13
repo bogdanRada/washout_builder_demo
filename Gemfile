@@ -47,6 +47,11 @@ gem 'savon'
 gem 'wasabi', '3.5.0'
 gem 'httpi'
 group :development do
+  gem "capistrano", "~> 3.10", require: false
+  gem "capistrano-rails", "~> 1.3", require: false
+  gem 'capistrano-bundler', '~> 2.0', require: false
+  gem 'capistrano-rvm', require: false
+
   gem 'better_errors'
   gem 'binding_of_caller'
 
