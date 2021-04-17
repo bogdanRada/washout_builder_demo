@@ -34,7 +34,7 @@ server "127.0.0.1", user: "vagrant", roles: %w{app db web}, my_property: :my_val
 
 # deploy.rb or stage file (staging.rb, production.rb or else)
 set :rvm_type, :system                     # Defaults to: :auto
-set :rvm_ruby_version, 'ruby-2.7.2'      # Defaults to: 'default'
+set :rvm_ruby_version, 'ruby-3.0.0'      # Defaults to: 'default'
 # set :rvm_custom_path, '/usr/local/rvm'  # only needed if not detected
 set :rvm_roles, [:app, :web]
 
@@ -50,7 +50,7 @@ set :rvm_roles, [:app, :web]
 set :ssh_options, {
   keys: %w(/home/raul/RubymineProjects/.vagrant/machines/default/virtualbox/private_key),
   forward_agent: true,
-  port: 2222,
+  port: 2200,
   auth_methods: %w(publickey password)
 }
 #
@@ -73,8 +73,8 @@ set :ssh_options, {
 #
 # # Install RVM
 # curl -sSL https://get.rvm.io | bash -s stable
-#  rvm install 2.7.2
-# rvm use 2.7.2 --default
+#  rvm install 3.0.0
+# rvm use 3.0.0 --default
 # gem install bundler -v 1.17.3
 #
 # sudo yum -y install postgresql postgresql-server postgresql-devel postgresql-contrib postgresql-docs
