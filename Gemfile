@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
-ruby '2.3.8'
+ruby '3.0.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.11.3'
+gem 'rails', '6.1.3.1'
 
 # Use SCSS for stylesheets
 gem 'sass-rails'
@@ -32,7 +32,7 @@ gem 'wash_out', git: 'https://github.com/inossidabile/wash_out.git'
  gem 'enhanced_date_select'
 #  gem 'washout_builder', path: '/home/raul/RubymineProjects/washout_builder'
 group :production do
-  gem 'pg', '~> 0.20'
+  gem 'pg'  #  use for older rails versions < 5 '~> 0.20'
   gem 'rails_12factor'
 end
 
