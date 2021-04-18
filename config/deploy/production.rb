@@ -33,26 +33,7 @@ server "127.0.0.1", user: "vagrant", roles: %w{app db web}, my_property: :my_val
 
 
 # deploy.rb or stage file (staging.rb, production.rb or else)
-set :rvm_type, :system                     # Defaults to: :auto
-set :rvm_ruby_version, 'ruby-3.0.0'      # Defaults to: 'default'
-# set :rvm_custom_path, '/usr/local/rvm'  # only needed if not detected
-set :rvm_roles, [:app, :web]
 
-
-# Custom SSH Options
-# ==================
-# You may pass any option but keep in mind that net/ssh understands a
-# limited set of options, consult the Net::SSH documentation.
-# http://net-ssh.github.io/net-ssh/classes/Net/SSH.html#method-c-start
-#
-# Global options
-# --------------
-set :ssh_options, {
-  keys: %w(/home/raul/RubymineProjects/.vagrant/machines/default/virtualbox/private_key),
-  forward_agent: true,
-  port: 2200,
-  auth_methods: %w(publickey password)
-}
 #
 # The server-based syntax can be used to override options:
 # ------------------------------------
@@ -66,23 +47,3 @@ set :ssh_options, {
 #     auth_methods: %w(publickey password)
 #     # password: "please use keys"
 #   }
-
-
-#  yum install -y gcc openssl-devel libyaml-devel libffi-devel readline-devel zlib-devel gdbm-devel ncurses-devel ruby-devel gcc-c++ jq git
-# curl -sSL https://rvm.io/mpapis.asc | gpg2 --import -
-#
-# # Install RVM
-# curl -sSL https://get.rvm.io | bash -s stable
-#  rvm install 3.0.0
-# rvm use 3.0.0 --default
-# gem install bundler -v 1.17.3
-#
-# sudo yum -y install postgresql postgresql-server postgresql-devel postgresql-contrib postgresql-docs
-# sudo service postgresql initdb
-# # Use MD5 Authentication
-# sudo sed -i.bak -e 's/ident$/md5/' -e 's/peer$/md5/' /var/lib/pgsql9/data/pg_hba.conf
-# #start
-# sudo /sbin/chkconfig --levels 235 postgresql on
-# sudo service postgresql start
-#
-#  yum install -y libxml2 libxml2-devel libxslt libxslt-devel

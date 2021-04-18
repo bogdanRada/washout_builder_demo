@@ -41,6 +41,18 @@ set :ssh_options, verify_host_key: :secure
 
 set :bundle_config, { 'build.nokogiri' => '--use-system-libraries' }
 
+set :rvm_type, :user                     # Defaults to: :auto
+set :rvm_ruby_version, 'ruby-3.0.0'      # Defaults to: 'default'
+# set :rvm_custom_path, '/usr/local/rvm'  # only needed if not detected
+set :rvm_roles, [:app, :web]
+
+set :ssh_options, {
+  keys: %w(/home/raul/RubymineProjects/.vagrant/machines/default/virtualbox/private_key),
+  forward_agent: true,
+  port: 2200,
+  auth_methods: %w(publickey password)
+}
+
 # file: lib/capistrano/tasks/rvmrc.rake
 namespace :rvmrc do
   desc "Trust rvmrc file"
