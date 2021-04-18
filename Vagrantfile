@@ -43,12 +43,25 @@ end
 # sudo chown -R vagrant:vagrant /var/www/
 # rvm rvmrc warning ignore all.rvmrcs
 #
-# sudo yum -y install postgresql postgresql-server postgresql-devel postgresql-contrib postgresql-docs
-# sudo service postgresql initdb
+#
+# amazon-linux-extras enable BCC
+# sudo yum install clang clang-devel llvm llvm-devel
+# sudo yum install postgresql13 postgresql13-contrib postgresql13-docs postgresql13-libs postgresql13-llvmjit postgresql13-server
+#
+# # postgresql13-devel can't be installed because missing llvm-toolset-7-clang package
+# # so we use this fallback although this uses these packages
+# #          postgresql-libs-9.2.24-1.amzn2.0.1.x86_64                                                                                  1/3
+# #          postgresql-9.2.24-1.amzn2.0.1.x86_64                                                                                       2/3
+# #          postgresql-devel-9.2.24-1.amzn2.0.1.x86_64
+# #  but seems to resolve the issue with installing pg gem
+# sudo yum install postgresql-devel
+#
+# sudo -u postgres createuser -s -i -d -r -l -w vagrant
+# sudo -u postgres psql -c "ALTER ROLE vagrant WITH PASSWORD '';"
+#
+#
+# # NOT USED --- do not run them
 # # Use MD5 Authentication
 # sudo sed -i.bak -e 's/ident$/md5/' -e 's/peer$/md5/' /var/lib/pgsql9/data/pg_hba.conf
-# #start
 # sudo /sbin/chkconfig --levels 235 postgresql on
 # sudo service postgresql start
-#
-#

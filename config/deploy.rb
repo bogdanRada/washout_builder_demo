@@ -39,9 +39,10 @@ set :keep_releases, 5
 # Uncomment the following to require manually verifying the host key before first deploy.
 set :ssh_options, verify_host_key: :secure
 
+set :bundle_env_variables, { nokogiri_use_system_libraries: 1 }
 set :bundle_config, {
   'build.nokogiri' => '--use-system-libraries',
-   'build.pg' => '--with-pg-config=/usr/pgsql-13/bin/pg_config'
+  'build.pg' => '--with-pg-config=/usr/pgsql-13/bin/pg_config'
 }
 
 set :rvm_type, :user                     # Defaults to: :auto
@@ -69,3 +70,11 @@ namespace :rvmrc do
 end
 
 before 'deploy:set_current_revision', 'rvmrc:trust'
+namespace :custom_bundler do
+  task :prepare_bundle_config do
+    on roles(:all) do
+      execute "~/.rvm/bin/rvm ruby-3.0.0 do bundle config build.pg --with-pg-config=/usr/pgsql-13/bin/pg_config"
+    end
+  end
+end
+before 'bundler:install', 'custom_bundler:prepare_bundle_config'
