@@ -39,7 +39,10 @@ set :keep_releases, 5
 # Uncomment the following to require manually verifying the host key before first deploy.
 set :ssh_options, verify_host_key: :secure
 
-set :bundle_config, { 'build.nokogiri' => '--use-system-libraries' }
+set :bundle_config, {
+  'build.nokogiri' => '--use-system-libraries',
+   'build.pg' => '--with-pg-config=/usr/pgsql-13/bin/pg_config'
+}
 
 set :rvm_type, :user                     # Defaults to: :auto
 set :rvm_ruby_version, 'ruby-3.0.0'      # Defaults to: 'default'

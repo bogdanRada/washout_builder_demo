@@ -39,6 +39,9 @@ end
 # gem install bundler -v 2.2.16
 #
 # sudo yum install -y libxml2 libxml2-devel libxslt libxslt-devel
+# sudo mkdir -pv /var/www
+# sudo chown -R vagrant:vagrant /var/www/
+# rvm rvmrc warning ignore all.rvmrcs
 #
 # sudo yum -y install postgresql postgresql-server postgresql-devel postgresql-contrib postgresql-docs
 # sudo service postgresql initdb
