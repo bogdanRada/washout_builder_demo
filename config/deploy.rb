@@ -46,10 +46,11 @@ set :rvm_ruby_version, 'ruby-3.0.0'      # Defaults to: 'default'
 # set :rvm_custom_path, '/usr/local/rvm'  # only needed if not detected
 set :rvm_roles, [:app, :web]
 
+# ./vagrant ssh-config
 set :ssh_options, {
-  keys: %w(/home/raul/RubymineProjects/.vagrant/machines/default/virtualbox/private_key),
+  keys: %Q(#{File.expand_path(File.dirname(__dir__))}/.vagrant/machines/default/virtualbox/private_key),
   forward_agent: true,
-  port: 2200,
+  port: 2222,
   auth_methods: %w(publickey password)
 }
 
