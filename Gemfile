@@ -51,7 +51,8 @@ group :development do
   gem "capistrano-rails", "~> 1.3", require: false
   gem 'capistrano-bundler', '~> 2.0', require: false
   gem 'capistrano-rvm', require: false
-
+  gem 'capistrano_multiconfig_parallel', path: '/home/raul/RubymineProjects/capistrano_multiconfig_parallel'
+  gem 'celluloid_pubsub' , path:  '/home/raul/RubymineProjects/celluloid_pubsub'
   gem 'better_errors'
   gem 'binding_of_caller'
 
