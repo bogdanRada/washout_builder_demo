@@ -21,7 +21,5 @@ test:
   database: db/test.sqlite3
 
 production:
-  adapter: postgresql
-  pool: 5
-  timeout: 5000
-  database: washout_builder_demo
+  <<: *default
+  database: db/washout_builder_demo.sqlite3

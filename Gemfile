@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 ruby '3.0.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '6.1.3.1'
+gem 'rails', '6.1.7'
 
 # Use SCSS for stylesheets
 gem 'sass-rails'
@@ -32,10 +32,10 @@ gem 'wash_out', git: 'https://github.com/inossidabile/wash_out.git'
  gem 'enhanced_date_select'
 #  gem 'washout_builder', path: '/home/raul/RubymineProjects/washout_builder'
 group :production do
-  gem 'pg'  #  use for older rails versions < 5 '~> 0.20'
+#  gem 'pg'  #  use for older rails versions < 5 '~> 0.20'
   gem 'rails_12factor'
 end
-
+gem 'sqlite3'
 # Use ActiveModel has_secure_password
 
 # gem 'bcrypt', '~> 3.1.7'
@@ -52,7 +52,6 @@ group :development do
   gem 'capistrano-bundler', '~> 2.0', require: false
   gem 'capistrano-rvm', require: false
   gem 'capistrano_multiconfig_parallel', path: '/home/raul/RubymineProjects/capistrano_multiconfig_parallel'
-  gem 'celluloid_pubsub' , path:  '/home/raul/RubymineProjects/celluloid_pubsub'
   gem 'better_errors'
   gem 'binding_of_caller'
 
@@ -71,7 +70,7 @@ end
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record
-  gem 'sqlite3'
+
   # codesmell and speed tests
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
